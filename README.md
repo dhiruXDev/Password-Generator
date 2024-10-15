@@ -1,4 +1,4 @@
-# Password-Generator
+ 
 # Password Generator
 
 ## Description
@@ -15,7 +15,7 @@ A **Password Generator** web application that allows users to generate secure pa
 - Copy generated password to clipboard with one click.
 
 ## Screenshot
-![Password Generator Screenshot](path-to-your-screenshot.png)
+![Password Generator Screenshot](images/Screenshot1.png)
 
 ## Demo
 You can check the live demo of the Password Generator [here](URL-to-your-GitHub-Pages-live-demo).
