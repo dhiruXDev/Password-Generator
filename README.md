@@ -18,7 +18,7 @@ A **Password Generator** web application that allows users to generate secure pa
 ![Password Generator Screenshot](images/Screenshot1.png)
 
 ## Demo
-You can check the live demo of the Password Generator [here](URL-to-your-GitHub-Pages-live-demo).
+You can check the live demo of the Password Generator [here](https://password-generator-chi-lake.vercel.app/).
 
 ## Technologies Used
 - **HTML5** for the structure of the webpage.
