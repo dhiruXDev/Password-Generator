@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    padding-bottom: 3.4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.heading {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1.2rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 450;
+    opacity: 0.7;
+    width: auto;
+
+}
+
+
+[password-generate] {
+    /* Your styles here */
+    position: relative;
+    display: flex;
+    opacity: 0.8;
+    align-items: start;
+    width: 240px;
+
+}
+
+[data_password_display] {
+    padding: 1.5rem 0;
+    padding-right: 4.5rem;
+    padding-left: 1.8rem;
+    border: none;
+    background-color: rgb(22, 12, 30);
+
+    width: 30rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 7px 1px rgb(103, 37, 117);
+
+    font-size: 1.2rem;
+    color: rgb(236, 236, 52);
+    font-weight: 600;
+
+}
+
+input::placeholder {
+    color: rgb(255, 229, 61);
+    opacity: 0.8;
+
+}
+
+[display_contanier] {
+    position: relative;
+}
+
+[data-copy] {
+    cursor: pointer;
+    position: absolute;
+
+
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* it is uses for align item in centewr  Center horizontally,  Center verticle   */
+}
+
+.copy_message.active {
+    position: absolute;
+    left: 82.5%;
+    top: -0.8rem;
+    color: rgb(255, 229, 61);
+    background-color: rgb(103, 37, 117);
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 0.2rem 0.6rem;
+
+}
+
+.input-contanier {
+    width: 450px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgb(22, 12, 30);
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    padding: 1.5rem 1.8rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 7px 1px rgb(103, 37, 117);
+}
+
+.length_contaner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+
+    padding-top: 0.8rem;
+}
+
+[data-length-no] {
+    color: rgb(255, 229, 61);
+    font-weight: 700;
+}
+
+.slider {
+    appearance: none;
+    position: relative;
+
+    border-radius: 0.5rem;
+    background-color: hsl(268, 47%, 21%);
+    background-image: linear-gradient(hsl(285, 91%, 52%), hsl(285, 91%, 52%));
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* .slider {
+    appearance: none;
+    position: relative;
+    border: none;
+    border-radius: 0.5rem;
+    
+    background-image: linear-gradient(to right, hotpink 0%, #4361EE 100%);
+   
+    background-position: left;
+    outline: none;
+    cursor: pointer;
+  } */
+
+.slider::-webkit-slider-thumb {
+    /* Psudeo Elemente selector for asscesing the Thumb*/
+    appearance: none;
+    /* means Hme browsser ka defult property Nhi chahiye*/
+    height: 32px;
+    width: 32px;
+    background-color: rgb(255, 229, 61);
+    border-radius: 50%;
+    margin:  -0.5rem -0.001rem;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+    position: relative;
+
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: rgb(25, 2, 2);
+    outline: 2px solid rgb(255, 229, 61);
+    box-shadow: 0 0 27px rgb(255, 229, 61);
+}
+
+.slider:focus {
+    outline: 3px solid rgb(255, 229, 61);
+
+}
+
+/* input[type="range"]::-webkit-slider-runnable-track {
+    background-color:blueviolet;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.slider::-webkit-slider-thumb {
+ 
+    position: relative;
+    width: 83px !important;
+    height: 24px !important;
+    border: 0;
+    background-color: yellowgreen;
+    cursor: pointer;
+  } */
+
+#first_checkBox {
+    margin-top: 1rem;
+}
+
+.checkboxHai {
+    display: flex;
+    gap: 1.2rem;
+    font-family: "League Spartan", sans-serif;
+
+}
+
+.checkboxHai input {
+    position: relative;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(43, 161, 234);
+    border-radius: 5px;
+}
+
+.checkboxHai input:checked::before {
+    position: absolute;
+    content: "✓";
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: 1000;
+    left: 18%;
+    top: -0.3rem;
+    color: rgb(22, 12, 30);
+}
+
+.checkboxHai input:checked {
+    background-color: rgb(43, 161, 234);
+}
+
+.checkboxHai label {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+[strength-section] {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+[strength-section] :nth-child(1) {
+    font-size: 21px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+#indicator {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+[password_generate] {
+    background-color: rgb(199, 45, 230);
+    padding: 1rem 0.3rem;
+    color: rgb(255, 229, 61);
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: "League Spartan", sans-serif;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 7px 1px rgb(255, 229, 61);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+[password_generate]:hover {
+    transition: all 0.5s;
+    background-color: rgb(205, 26, 240);
+}
+
+/* For screens smaller than 768px */
+
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 520px) {
+    .heading {
+        font-size: 1.9rem;
+        /* Further adjust font size */
+        padding-top: -5.5rem;
+    }
+
+    [password-generate] {
+        width: 150px;
+        /* Further adjust width */
+    }
+
+    .input-contanier {
+        width: 90%;
+        /* Adjust width to full screen */
+        padding: 1rem;
+        /* Adjust padding */
+    }
+
+    [data_password_display] {
+        width: 89vw;
+    }
+
+    .wrapper {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .heading {
+        font-size: 1.8rem;
+        /* Further adjust font size */
+        width: 110px;
+        line-height: 1.8rem;
+    }
+
+    [password_generate] {
+        width: 110px;
+        /* Further adjust width */
+        font-size: 1.1rem;
+
+    }
+
+    .input-contanier {
+        width: 90%;
+        /* Adjust width to full screen */
+        padding: 1rem;
+        /* Adjust padding */
+    }
+
+    [data_password_display] {
+        width: 89vw;
+    }
+
+    .wrapper {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 180px) {
+
+    /* .wrapper {
+        padding-bottom: 20rem;
+        padding-right: 12rem;
+        height: 100vh;
+        width: 100vw;
+    } */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password | Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+      <div class="wrapper">
+              <div class="container">
+                <h1 class="heading">Password Generator</h1> 
+                <div display_contanier>  <!--  display_contanier is a custom ID just like class And Id . We can use any one of them.    -->
+                    <input readonly placeholder="PASSWORD" class="display" data_password_display  >
+    
+                    <img src="./images/copy_icon.svg" alt="copy" height="22" width="25" data-copy >
+                    <span copy-msg  class="copy_message"> </span>    <!--  its for shwing the Copid! text liike pop-Up     -->
+                </div>
+
+                <!-- Input contanier -->
+                <div class="input-contanier">
+                    <!-- password-Length section  -->
+                    <div class="length_contaner">
+                        <span class="password-length" >Password Length</span>
+                        <p data-length-no></p>
+                    </div>
+                    <!-- Slider range -->
+                    <input aria-label="d" type="range" min="1" max="20" step="1" data-length-slider class="slider"/>
+
+                    <!-- Check box -->
+                    <div class="checkboxHai" id="first_checkBox" >
+                        <input type="checkbox" aria-label="c" id="uppercase"  >
+                        <label for="uppercase"> Include Uppercase Letters</label >                   
+                    </div>
+                        <div class="checkboxHai">
+                                <input type="checkbox" aria-label="c" id="lowerCase">
+                                <label for="lowerCase"> Include LowerCase Letters</label >                   
+                        </div>
+
+                        <div class="checkboxHai">
+                            <input type="checkbox" aria-label="c" id="Numbers"  >
+                            <label for="Numbers"> Include Numbers</label >                   
+                        </div>
+
+                    <div class="checkboxHai">
+                        <input type="checkbox" aria-label="c" id="Symbols" >
+                        <label for="Symbols">  Include Symbols</label >                   
+                        </div>
+                
+                <!-- Strength sectioon -->
+                    <div strength-section>
+                        <p>Strength</p>
+                        <div id="indicator" data-strength-Indicator></div>
+                    </div>
+                <!-- Button section -->
+                <button password_generate class="">Generate Password</button>
+            </div>
+      </div> 
+ </div>
+
+
+        
+    <script src="script.js"></script>
+</body>
+</html>
